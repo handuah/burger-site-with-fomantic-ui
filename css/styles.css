@@ -33,10 +33,9 @@ body{
     left: 150px;
     z-index: 2;
     
-    
-    /* padding: 10px 50px; */
-    
 }
+
+
 .menu{
     padding: 5px 0;
     border-radius: 30px !important;
@@ -47,17 +46,33 @@ body{
     padding: 20%;
 }
 
-div.header{
+#bg-left .header{
     color: #352B31;
     font-size: 5em !important;
     font-weight: 400;
 }
 
-.header + p {
+#bg-left .header + p {
     color: #352b31b4;
     font-size: 1.1em;
     line-height: 30px;
 }
+
+/* pricing page css */
+#general-menu > .menu{
+    border-radius: 0px !important;
+}
+#banner>.column>.container>img{
+    padding-top: 80px !important;
+}
+#pricing-cards{
+    margin-top: 2%;
+}
+
+
+
+
+
 
 
 /* MEDIA QUERIES */

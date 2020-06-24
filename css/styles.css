@@ -1,0 +1,128 @@
+body{
+      /* overflow-y: hidden; */
+      height: 110% !important;
+   }
+
+#bg-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FBB800 !important;
+    width: 50%;
+    height: 105vh;
+    border-top-width: 60%;
+    
+}
+
+#bg-right{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: #352B31 !important;
+    width: 50%;
+    height: 105vh;
+}
+
+#bg-right > .container {
+    margin: 30% 0;
+}
+#menu{
+    position: fixed;
+    width: 80%;
+    top: 20px;
+    left: 150px;
+    z-index: 2;
+    
+    
+    /* padding: 10px 50px; */
+    
+}
+.menu{
+    padding: 5px 0;
+    border-radius: 30px !important;
+}
+
+#left-container-text{
+    margin: 20% 0;
+    padding: 20%;
+}
+
+div.header{
+    color: #352B31;
+    font-size: 5em !important;
+    font-weight: 400;
+}
+
+.header + p {
+    color: #352b31b4;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* for tablets */
+@media screen and ( min-width: 768px) and (max-width: 1023px){
+    #bg-right > .container {
+        margin: 50% 0;
+    }
+    
+}
+
+/* for smartphones */
+@media screen and ( max-width: 767px){
+ div.header{
+        font-size: 2em !important;
+    }
+
+    .header + p {
+        font-size: small;
+    }
+   
+    /* changing the positions of the backgrounds 
+    bg-right comes on top and bg-left comes below */
+    #bg-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 70vh;
+   }
+
+   #bg-left  > .container{
+    padding: 6%;
+    margin-left: 11%;
+    /* margin-top: 3%; */
+   }
+   #bg-left {
+    position: absolute;
+    top: 70vh;
+    left: 0;
+    height: 70vh;
+}
+
+#menu{
+    width: 100%;
+    top: 20px;
+    left: 4px;
+    padding: 0 2%;
+
+}
+
+.menu{
+    padding: 0 5%;
+}
+
+
+.right.menu > .item, .ui.menu > .item.header {
+    font-size: smaller;
+}
+
+.right.menu > .ui.button {
+    display: none;
+    /* width: 10%; */
+    font-size: smaller;
+    padding: 15px 5px;
+}
+
+}

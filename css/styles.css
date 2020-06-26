@@ -36,12 +36,16 @@ body{
 }
 
 .right.menu>.item.active {
-    background-color: orange !important;
+    background: orange !important;
     color: white !important;
     font-weight: 600 !important;
     /* border-top-left-radius: 20px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.item.active:after{
+    background-color: orange !important;
 }
 .menu{
     padding: 5px 0;

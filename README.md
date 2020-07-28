@@ -1,2 +1,2 @@
-burger-site-semantic-ui
+#burger-site-semantic-ui
 https://handuah.github.io/burger-site-semantic-ui/
